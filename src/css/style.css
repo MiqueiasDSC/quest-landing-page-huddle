@@ -1,0 +1,169 @@
+body{
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   background: url(../images/bg-desktop.svg) center/cover no-repeat;
+   background-color: hsl(257, 40%, 49%);
+   height: 100vh;
+}
+
+.header{
+   height: 200px;
+   display: flex;
+   align-items: center;
+}
+
+.header a img{
+   width: 264px;
+   height: 65px;
+   margin: 20px 60px;
+}
+
+.hero{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 45px;
+}
+
+.hero img{
+   height: 100%;
+   width: 100%;
+   margin: 0 60px;
+}
+
+.hero .content{
+   margin: 0px 60px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.hero .content h1{
+   font-size: 4.5rem;
+   color: #ffff;
+   font-weight: 500;
+   margin-bottom: 30px;
+}
+
+.hero .content p{
+   font-size: 1.5rem;
+   color: #ffff;
+   margin-bottom: 30px;
+}
+
+.hero .content button{
+   height: 50px;
+   width: 300px;
+   border-radius: 80px;
+   font-size: 20px;
+   color: hsl(257, 40%, 49%);
+   box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.3);
+   transition: 0.3s ease-in-out;
+   cursor: pointer;
+   margin-bottom: 60px;
+}
+
+.hero .content button:hover{
+   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+   font-size: 21px;
+}
+
+.footer{
+   display: flex;
+   justify-content: flex-end;
+   height: 100px;
+   align-items: center;
+}
+
+.footer ul{
+   display: flex;
+   flex-direction: row;
+   margin: 0 60px;
+   gap: 20px;
+}
+
+.footer a{
+   font-size: 30px;
+   color: #ffff;
+   border-radius: 50%;
+   border: solid 2px #ffff;
+   width: 50px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 0.3s ease-in-out;
+}
+
+.footer a:hover{
+   color: hsl(300, 69%, 71%);
+   border: solid 2px hsl(300, 69%, 71%);
+}
+
+@media (max-width: 415px) {
+   body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background: url(../images/bg-mobile.svg) center/cover no-repeat;
+      background-color: hsl(257, 40%, 49%);
+      height: 100vh;
+   }
+   
+   .header a img{
+      width: 164px;
+      height: 65px;
+      margin: 0px 30px;
+   }
+   
+   .hero{
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+   
+   .hero img{
+      width: 340px;
+      display: flex;
+      margin-left: 35px;
+   }
+   
+   .hero .content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+   
+   .hero .content h1{
+      font-size: 28px;
+      color: #ffff;
+      font-weight: 500;
+      margin-bottom: 30px;
+   }
+   
+   .hero .content p{
+      font-size: 18px;
+      color: #ffff;
+      margin-bottom: 30px;
+   }
+   
+   .footer{
+      display: flex;
+      justify-content: center;
+      height: 100px;
+      align-items: center;
+   }
+   
+   .footer i{
+      font-size: 30px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .footer a:hover{
+      color: hsl(300, 69%, 71%);
+      border: solid 2px hsl(300, 69%, 71%);
+   }
+}
+
